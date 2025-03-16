@@ -6,8 +6,15 @@ android上开源弹幕解析绘制引擎项目。[![Build Status](https://travis
 ### 说明和使用
 - 解决了手机在高刷新率下弹幕重复问题
 - 添加了弹幕倍数设置
-使用：
+- 使用：
 https://jitpack.io/#boxtm66/Danmaku
+
+```groovy
+
+  implementation 'com.github.boxtm66.Danmaku:DanmakuFlameMaster:v0.9.26'
+  implementation 'com.github.boxtm66.Danmaku:ndkbitmap-armv7a:v0.9.26'
+
+```
 
 ### DFM Inside: 
 [![bili](https://raw.github.com/ctiao/ctiao.github.io/master/images/apps/bili.png?raw=true)](https://play.google.com/store/apps/details?id=tv.danmaku.bili)
