@@ -1,18 +1,31 @@
 buildscript {
+    ext {
+        versions = [
+                sdk_compile: 33,
+                sdk_min    : 9,//23 android 6
+                sdk_target : 33,
+                sdk_build  : "33.0.0",
+                java       : "1.8",
+                ndk_version: "22.1.7171670",
+        ]
+    }
     repositories {
-        jcenter()
+        // jcenter()
         google()
+        gradlePluginPortal()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:7.4.2'
         classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
+        // classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        // jcenter()
         google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
